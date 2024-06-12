@@ -88,7 +88,7 @@ for (i = 0; i < vehiculosDelDia; i++) {
     if ((pregunta != 'auto') && (pregunta != 'camioneta')) {
         while (true) {
             pregunta = prompt('porfavor elija camioneta/auto: ').toLowerCase()
-            if ((pregunta != 'auto') || (pregunta != 'camioneta')) {
+            if ((pregunta == 'auto') || (pregunta == 'camioneta')) {
                 console.log('respuesta guardada con exito')
                 break
             }
@@ -136,11 +136,11 @@ for (i = 0; i < vehiculosDelDia; i++) {
 }
 
 //salida
+console.log('==================AUTOS==================')
 for (i = 0; i < arrayAuto.length; i++){
-    console.log('==================AUTOS==================')
     arrayAuto[i].mostrarinfo()
 }
+console.log('==================CAMIONETAS==================')
 for (i = 0; i < arrayCamioneta.length; i++){
-    console.log('==================CAMIONETAS==================')
     arrayCamioneta[i].mostrarinfo()
 }
