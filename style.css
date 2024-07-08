@@ -18,7 +18,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./img/Diseño\ sin\ título.png);
+    background-color: rgb(62, 92, 119);
 }
 /* Body */
 
@@ -31,7 +31,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(46, 69, 88, 0.6);
+    background-color: rgb(46, 69, 88);
 }
 
 body #padre{
@@ -39,7 +39,7 @@ body #padre{
     height: 60%;
     width: 80%;
 
-    background-color: rgb(24, 31, 73, 0.8);
+    background-color: rgb(24, 31, 73);
 
 
     display: flex;
@@ -51,9 +51,53 @@ body #padre{
 
 
 
-.secciones{
+.seccion1{
     width: 100%;
     height: 100%;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.seccion1 p{
+    font-size: 25px;
+    color: rgb(255, 187, 0);
+}
+
+label{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    height: 60%;
+    width: 90%;
+}
+
+.seccion1 label input{
+    height: 40px;
+    width: 300px;
+}
+
+.enviar{
+    height: 40px;
+    width: 100px;
+
+    text-decoration: none;
+
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 530;
+}
+
+.seccion2{
+    width: 250%;
+    height: 150%;
 
 
     display: flex;
@@ -76,7 +120,7 @@ body div h2{
     text-align: center;
 }
 
-.boton{
+/* .boton{
     height: 4vh;
     width: 9vh;
     text-align: center;
@@ -87,17 +131,80 @@ body div h2{
     font-size: 2.2vh;
 }
 
+ */
 
 .articulo{
-    height: 30%;
-    width: 35%;
+    height: 18%;
+    width: 18%;
     align-items: center;
 
     border: 2px solid red;
     border-radius: 20px;
 
     display: flex;
-    justify-content: center;
-    justify-content: space-around;
     flex-direction: column;
+    justify-content: space-around;
+}
+
+.articulo p {
+    color: white;
+    font-size: 20px;
+}
+
+.biblioteca{
+    height: 80%;
+    width: 80%;
+
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+
+.section_inicio{
+    height: 92%;
+    width: 95%;
+
+
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.section_inicio h2{
+    color: rgb(255, 187, 0);
+    font-size: 80px;
+}
+.section_inicio p{
+    color: rgb(167, 167, 167);
+    font-size: 30px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    height: 20%;
+    width: 60%;
+}
+
+.section_inicio form input{
+    height: 40px;
+    width: 400px;
+}
+
+.inicio_submit {
+    height: 45px !important;
+    width: 10px !important;
 }
